@@ -17,7 +17,7 @@ section {
     min-width: 500px;
     padding: 20px;
     text-align: center;
-    background-color: rgb(226, 226, 226);
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 2px 13px 2px rgba(117,117,117,0.7);
     -webkit-box-shadow: 0px 2px 13px 2px rgba(117,117,117,0.7);
@@ -56,11 +56,19 @@ section h1 {
     text-align: center;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: all .2s ease;
 }
 .game-table .box:hover {
     background-color: rgb(241, 241, 241);
 }
 
-.game-table .box span {
+.game-table .box span.empty {
     visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        min-width: 90%;
+        padding: 10px;
+    }    
 }
