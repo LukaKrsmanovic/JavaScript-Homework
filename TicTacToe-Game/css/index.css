@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(238, 238, 238);
 }
 
 section {
@@ -57,6 +57,11 @@ section h1 {
     font-size: 1.5rem;
     cursor: pointer;
     transition: all .2s ease;
+    /* Can't select box content */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 .game-table .box:hover {
     background-color: rgb(241, 241, 241);
