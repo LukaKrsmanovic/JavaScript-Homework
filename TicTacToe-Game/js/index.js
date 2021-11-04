@@ -28,7 +28,6 @@ function boxSelect(e) {
     else {
         field.className = "";
         field.textContent = turnMark;
-        console.log(field.id);
         //Field number: parseInt(field.id.replace("box-", ""));
         turnChange(parseInt(field.id.replace("box-", ""))-1);
         if(gameEnd(1)) {
@@ -49,7 +48,6 @@ function boxSelect(e) {
         else {
             title.style.color = "black";
             title.textContent = turnMark + " turn";
-            console.log(boardMatrix);
         }
     }
 }
@@ -95,4 +93,16 @@ function gameEnd(mark) {
 
 function removeListener() {
     board.removeEventListener("click", boxSelect);
+
+    document.querySelector(".message").style.bottom = "10px";
+    startTimer(document.getElementById("time-left"));
+}
+
+function startTimer(number) {
+    for(let i = 7; i >= 0; i--) {
+        setTimeout(function() {
+            number.textContent = "" + i;
+            if(i == 0) { location.reload(); }
+        }, (7000 - i*1000));
+    }
 }
