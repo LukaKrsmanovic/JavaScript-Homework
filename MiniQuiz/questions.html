@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="./css/questions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="box">
+        <div class="container">
+            <h2>Question <span>1</span></h2>
+            <div class="question-part">
+                <h3>Question title</h3>
+                <form class="do-display" onsubmit="event.preventDefault();">
+                    <div class="answer">
+                        <input type="radio" id="ans1r" name="qstAns" value="0">
+                        <label for="ans1r"> Answer 1</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="ans2r" name="qstAns" value="1">
+                        <label for="ans2r"> Answer 2</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="ans3r" name="qstAns" value="2">
+                        <label for="ans3r"> Answer 3</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="ans4r" name="qstAns" value="3">
+                        <label for="ans4r"> Answer 4</label>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+                <form class="dont-display" onsubmit="event.preventDefault();">
+                    <div class="answer">
+                        <input type="checkbox" id="ans1c" name="qstAns1" value="0">
+                        <label for="ans1c"> Answer 1</label>
+                    </div>
+                    <div class="answer">
+                        <input type="checkbox" id="ans2c" name="qstAns2" value="1">
+                        <label for="ans2c"> Answer 2</label>
+                    </div>
+                    <div class="answer">
+                        <input type="checkbox" id="ans3c" name="qstAns3" value="2">
+                        <label for="ans3c"> Answer 3</label>
+                    </div>
+                    <div class="answer">
+                        <input type="checkbox" id="ans4c" name="qstAns4" value="3">
+                        <label for="ans4c"> Answer 4</label>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/questions.js"></script>
+
+</body>
+</html>
