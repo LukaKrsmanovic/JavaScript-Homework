@@ -49,6 +49,7 @@ body {
     background-color: #fff;
     border: 1px solid orange;
     border-radius: 2px;
+    transition: all .3s ease;
     cursor: pointer;
 }
 .box form input[type="submit"]:hover {
