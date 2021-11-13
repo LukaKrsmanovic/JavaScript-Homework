@@ -3,25 +3,43 @@ let count = 1;
 
 let questions = [
     "What is the sum of 2 and 3?", 
+    "What is the max value of f(x) = 7 + 4*sin(x)",
     "What is the positive square root of 100?", 
-    "What is HTML abbreviation for?", 
-    "What is AJAX short for?"
+    "What is the square root of 25?",
+    "What is the abbreviation for HTML?", 
+    "What is AJAX short for?",
+    "What is JSON shor for?",
+    "On keyboard, what is key esc short for?",
+    "Guess the element value: [5, 8, 11, ?]",
+    "Guess the element value: [Q, W, E, ?]"
 ];
 
 let totalQuestions = questions.length;
 
 let posibbleAns = [
     ["The sum is: 5", "The sum is: 2", "The sum is: 9", "The sum is: 6"],
+    ["Answer: 7", "Answer: 4", "Answer: 11", "Answer: 0"],
     ["Answer: 89", "Answer: 10.01", "Answer: 50", "Answer: 10"],
+    ["Answer: 15", "Answer: -5", "Answer: |5|", "Answer: 5"],
     ["High Texture Multi Language", "Doesn't have abbreviation", "HyperText Markup Language", "HTML"],
-    ["Doesn't have abbreviation", "Asynchronous JavaScript And XML", "Asynchronous JavaScript and XML", "Analog JavaScript and XML"]
+    ["Doesn't have abbreviation", "Asynchronous JavaScript And XML", "Asynchronous Java and XML", "Analog JavaScript and XML"],
+    ["Java School Of Notation", "JavaScript Object Notation", "Just Script Of Notations", "Doesn't have abbreviation"],
+    ["Answer: Escort", "Answer: Escape", "Answer: Escalate", "Answer: Enter"],
+    ["Answer: 12", "Answer: 14", "Answer: 18", "Answer: 15"],
+    ["Answer: G", "Answer: T", "Answer: R", "Answer: F"]
 ];
 
 let correctAns = [
     [0],
-    [3],
     [2],
-    [1, 2]
+    [3],
+    [1, 2, 3],
+    [2],
+    [1],
+    [1],
+    [1],
+    [1],
+    [2]
 ];
 
 let submitBtn = document.querySelector(".do-display input[type='submit']");
@@ -116,5 +134,5 @@ function wrongAnswer() {
 
 function victory() {
     alert("Congratulations!\nYou have answered everything correctly!");
-    location.reload();
+    location.href = "./index.html";
 }
