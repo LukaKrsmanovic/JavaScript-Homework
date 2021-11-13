@@ -71,9 +71,9 @@ function checkString() {
     for(let i = 0; i < number; i++) {
         word += inputField[i].value;
     }
-    if(word.length > 2 && word.length % 2 != 0) {
+    if(word.length > 1) {
         let isPalindrom = true;
-        for(let i = 0; i < parseInt(word.length/2); i++) {
+        for(let i = 0; i < Math.floor(word.length/2); i++) {
             if(word[i] !== word[word.length-1-i]) {
                 isPalindrom = false;
                 break;
